@@ -26,7 +26,7 @@ PHP, Laravel, JavaScript, React, React Native, TypeScript, Python, SQL, MySQL/Ma
 
 ## Qué contiene este repositorio
 
-El código HTML, CSS y JavaScript de la página del portafolio, dos capturas con datos ficticios, un diagrama explicativo y mi hoja de vida. No contiene el código de los sistemas comerciales, sus bases de datos ni credenciales. Las fichas no son demos conectadas a producción.
+El código HTML, CSS y JavaScript de la página del portafolio, capturas con datos ficticios, un diagrama explicativo y mi hoja de vida. No contiene el código de los sistemas comerciales, sus bases de datos ni credenciales. Las fichas no son demos conectadas a producción.
 
 ## Ejecutar la web localmente
 
@@ -39,3 +39,4 @@ Abrir http://127.0.0.1:8000. La web no necesita instalar dependencias ni conecta
 ## Contacto
 
 [jreyesmaun@gmail.com](mailto:jreyesmaun@gmail.com)
+
