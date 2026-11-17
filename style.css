@@ -35,3 +35,25 @@ body{font-family:Instrument,Arial,sans-serif;background:var(--paper)}
 .phone-cutout{width:64%;max-width:320px;right:18px}.hero h1{font-stretch:100%;font-size:clamp(68px,7.5vw,102px)}@media(max-width:850px){.phone-cutout{width:64%;right:18px}.hero h1{font-size:85px}}@media(max-width:560px){.phone-cutout{width:70%;right:10px}.hero h1{font-size:clamp(54px,16vw,82px)}}
 
 .home #main{overflow-x:clip}.collage-orbit{overflow:hidden}.section-heading h2,.about h2,.contact h2{font-stretch:100%}.section-heading h2{font-size:clamp(36px,4vw,56px)}
+
+/* Portada simplificada: un recorte y una sola jerarquía visual. */
+.home{background:var(--paper)}
+.hero{min-height:570px;grid-template-columns:1.25fr .75fr;gap:65px;padding:65px 0 60px;background:var(--ink);box-shadow:0 0 0 100vmax var(--ink);clip-path:inset(0 -100vmax)}
+.hero:before{display:none}
+.hero h1{font-size:clamp(52px,5.2vw,74px);line-height:1.02;letter-spacing:-2.6px;margin:28px 0 25px;text-transform:none}
+.hero h1 em{color:#F26941}
+.hero .eyebrow{font-size:10px;letter-spacing:1.5px;color:#c6d2c3}
+.hero .intro{max-width:460px;font-size:17px;line-height:1.7;color:#d8dfd4}
+.hero .actions{margin-top:30px;gap:22px;align-items:center}
+.hero .button{box-shadow:none}
+.hero .button.secondary{border:0;padding:10px 0;background:none;text-decoration:underline;text-underline-offset:6px}
+.hero-availability{font-size:11px;color:#b8c7b5;margin:23px 0 0}
+.hero-side{margin:0;max-width:none}
+.collage{height:405px;max-width:340px;margin:auto}
+.phone-cutout{top:0;right:25px;width:265px;max-width:none;transform:rotate(5deg);filter:none}
+.skill-strip{transform:none;clip-path:none;margin:0;padding:26px 0;border-bottom:1px solid var(--line);font-weight:500;font-size:12px;gap:14px 22px}
+.skill-strip span:before{content:'';margin:0}
+#proyectos{padding-top:72px}
+@media(max-width:1000px) and (min-width:851px){.hero{gap:30px}.hero h1{font-size:58px}.phone-cutout{width:235px;right:10px}.collage{height:370px}}
+@media(max-width:850px){.hero{grid-template-columns:1.1fr .8fr;gap:20px;min-height:510px;padding:50px 0}.hero h1{font-size:52px}.hero .intro{font-size:16px}.hero .eyebrow{font-size:9px;letter-spacing:.8px}.phone-cutout{width:210px;right:5px;top:15px}.collage{height:345px}.hero-side{margin:0;width:100%}.hero .actions{gap:16px}.hero .button{font-size:12px;padding:12px 15px}}
+@media(max-width:620px){.hero{grid-template-columns:1fr;gap:26px;padding:45px 0 28px}.hero h1{font-size:clamp(45px,11.8vw,67px);letter-spacing:-1.8px;margin:25px 0 22px}.hero .intro{max-width:440px;font-size:16px}.hero .eyebrow{font-size:9px;letter-spacing:.7px}.hero .actions{margin-top:25px;gap:24px}.hero-availability{margin-top:21px}.hero-side{max-width:300px;margin:auto}.collage{height:295px;width:260px;max-width:100%;margin:auto}.phone-cutout{width:190px;top:0;right:35px;transform:rotate(4deg)}.skill-strip{font-size:11px;gap:15px 22px;padding:23px 0}#proyectos{padding-top:45px}}
