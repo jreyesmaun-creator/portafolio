@@ -1,3 +1,5 @@
 Tipografías Bricolage Grotesque e Instrument Sans: SIL Open Font License, licencias adjuntas.
 Recorte telefono-mano.webp: recurso de agloservice.com, sitio del autor y referencia visual solicitada.
 Capturas de DistriMeli y Cuadrangular: interfaces de demostración con datos ficticios.
+
+Recortes bolsa-collage.webp y personas-collage.webp: recursos de agloservice.com, referencia visual solicitada. Uso ilustrativo; no representan clientes o equipo del proyecto.
