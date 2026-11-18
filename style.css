@@ -153,3 +153,28 @@ body{background-image:url('paper-grain.svg')}
 @media(prefers-reduced-motion:reduce){.preview img{transition:none}}
 
 .about:before{left:-90px;right:-90px}
+
+/* Proyectos abiertos: imágenes y texto, sin tarjetas ni marcos. */
+.featured:before,.small-project:before,.preview:before,.contact:before,.about-location:before{display:none}
+.featured,.small-project,.small-project:last-child{background:none;clip-path:none;mask-image:none;border:0;padding:30px 0;transform:none;isolation:auto}
+.featured{grid-template-columns:1.1fr 1fr;gap:65px;margin-bottom:25px;align-items:center}
+.featured .project-info{padding:0}.project-grid{display:block;padding:0}
+.small-project,.small-project:last-child{display:grid;grid-template-columns:1.1fr 1fr;gap:65px;align-items:center;margin:35px 0 0;padding:42px 0}
+.small-project:nth-child(2){margin:35px 0 0;transform:none}
+.small-project .project-info,.small-project:nth-child(2) .project-info{transform:none}
+.small-project:first-child{grid-template-columns:1fr 1.1fr}.small-project:first-child>.preview{order:2}.small-project:first-child>.project-info{order:1}
+.preview,.featured>.preview,.small-project .preview,.small-project:nth-child(2) .preview{margin:0;padding:0;border:0;background:none;mask-image:none;clip-path:none;box-shadow:none;filter:none;overflow:visible;transform:rotate(-1.8deg)}
+.featured>.preview{transform:none}.small-project:first-child .preview{transform:rotate(1.7deg)}
+.preview img,.small-project .preview img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;filter:none;border-radius:0;box-shadow:none}
+.project-info h3,.small-project h3{color:var(--signal);font-size:2.7rem;line-height:1.05;margin:16px 0 20px}
+.project-info p,.small-project p{color:#e5e8db;font-size:1.0625rem;line-height:1.75}
+.project-number,.small-project .project-number{color:#bdcbb7;font-size:.8125rem}
+.project-info .tag{color:#cad6c2}.project-info .tag:not(:last-child):after{color:#9ba893}
+.project-info .scope-short,.small-project .scope-short{color:#c6d2bf;font-size:.875rem!important;line-height:1.7}
+.text-link{padding:8px 0;background:none;color:var(--white);mask-image:none;clip-path:none;min-height:40px;text-decoration:underline;text-underline-offset:7px;font-family:Instrument;font-weight:600}
+.text-link:hover{color:#ff9c7c;background:none}
+.about-location{padding:0;background:none;transform:none;color:var(--muted);font-weight:500}.contact{background:none;mask-image:none;clip-path:none;transform:none;padding:28px 0 35px;margin:0 0 20px;border:0;gap:50px}.contact>*{transform:none}.contact h2{color:var(--ink)}.contact p{color:var(--muted)}.contact .button{background:var(--signal);color:var(--ink);mask-image:none;clip-path:none;border-radius:999px;padding:13px 25px;white-space:nowrap}
+.case-media .image-open{padding:0;border:0;background:none;mask-image:none;clip-path:none;transform:none;box-shadow:none}.case-media img{background:none}.scope-box{border-left:2px solid #d66b45;padding:0 0 0 24px!important}.scope-box:before{display:none}
+@media(max-width:1000px){.featured,.small-project,.small-project:last-child{gap:38px}.project-info h3,.small-project h3{font-size:2.3rem}}
+@media(max-width:850px){.featured,.small-project,.small-project:last-child{grid-template-columns:1fr 1fr;gap:30px}.project-info h3,.small-project h3{font-size:2rem}.project-info p,.small-project p{font-size:1rem}.contact{gap:30px}}
+@media(max-width:620px){.featured,.small-project,.small-project:last-child,.small-project:first-child{grid-template-columns:1fr;gap:25px;padding:20px 2px 32px;margin:0 0 24px}.small-project:first-child>.preview,.small-project:first-child>.project-info{order:initial}.small-project:nth-child(2){margin:0 0 15px}.project-info h3,.small-project h3{font-size:2.1rem;overflow-wrap:normal}.preview,.featured>.preview,.small-project .preview{margin:0;aspect-ratio:auto;padding:0}.small-project .preview img{aspect-ratio:auto}.project-info p,.small-project p{font-size:1rem}.featured .project-info{padding:0}.contact{padding:18px 0 25px;margin:0 0 15px;gap:24px;flex-direction:column;align-items:flex-start}.contact h2{font-size:2.6rem}.scope-box{padding:0 0 0 18px!important}}
